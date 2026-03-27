@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0a0a0f;
+  color: #e0dfff;
+  overflow-x: hidden;
+}
+
+/* 背景エフェクト */
+.bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 50%, #3a0066, #000);
+  opacity: 0.4;
+  z-index: -1;
+}
+
+/* ヘッダー */
+header {
+  text-align: center;
+  padding: 80px 20px 40px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #c084ff;
+  letter-spacing: 2px;
+}
+
+.sub {
+  opacity: 0.6;
+}
+
+/* メイン */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 80px;
+}
+
+/* カード */
+.card {
+  width: 80%;
+  max-width: 600px;
+  background: rgba(20, 0, 40, 0.6);
+  border: 1px solid rgba(192, 132, 255, 0.3);
+  padding: 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+/* ホバーで光る */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #a855f7;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  padding: 20px;
+  opacity: 0.5;
+}
